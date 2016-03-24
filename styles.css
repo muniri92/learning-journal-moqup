@@ -1,79 +1,72 @@
-// vars
-$black: #000;
-$white: #fff;
-$grey: #444;
-$gutter: 30px;
+body {
+  font-family: helvetica;
+  /*text-decoration: none;*/
+}
 
-// globals
-body { font-family: helvetica; }
-a { text-decoration: none; color: $white; }
-.clearfix { clear: both; }
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+}
+
+.clearfix {
+  clear: both;
+}
 
 header {
-  background: $grey;
+  background: #444;
   height: 65px;
-  
-  #header_inner {
-    width: 960px;
-    margin: 0 auto;
-    
-    img {
-      float: left;
-      margin-right: $gutter;
-      margin-top: 7px;
-    }
-  
-    li {
-      display: inline-block;
-      margin-top: 23px;
-      margin-right: 125px;
-      
-      &:last-child {
-        margin-right: 0px;
-      }
-    }
-  }
+}
+header #header_inner {
+  width: 960px;
+  margin: 0 auto;
+}
+header #header_inner img {
+  float: left;
+  margin-right: 30px;
+  margin-top: 7px;
+}
+header #header_inner li {
+  display: inline-block;
+  margin-top: 23px;
+  margin-right: 125px;
+}
+header #header_inner li:last-child {
+  margin-right: 0px;
 }
 
 main {
   width: 960px;
   margin: 0 auto;
-  
-  .main_banner {
-    margin: $gutter 0;
-  }
-  
-  .sub_banners {
-    li {
-      float: left;
-      margin-right: $gutter;
-    
-      &:last-child {
-        margin-right: 0px;
-      } 
-    }
-  }
-  
-  #featured {
-    margin-top: $gutter;
-    
-    img {
-      float: left;
-      padding-right: $gutter;
-    }
-    
-    p {
-      height: 300px;
-      overflow: auto;
-      line-height: 26px;
-      font-size: 18px;
-    }
-  }
+}
+main .main_banner {
+  margin: 30px 0;
+}
+main .sub_banners li {
+  float: left;
+  margin-right: 30px;
+}
+main .sub_banners li:last-child {
+  margin-right: 0px;
+}
+main #featured {
+  margin-top: 30px;
+}
+main #featured img {
+  float: left;
+  padding-right: 30px;
+}
+main #featured p {
+  height: 300px;
+  overflow: auto;
+  line-height: 26px;
+  font-size: 18px;
 }
 
 footer {
-  margin-top: $gutter;
+  margin-top: 30px;
   height: 150px;
-  background: $grey;
+  background: #444;
 }
-
